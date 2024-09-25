@@ -6,13 +6,11 @@
 /*   By: alejagom <alejagom@student.42madird.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 21:54:47 by alejagom          #+#    #+#             */
-/*   Updated: 2024/09/25 21:54:50 by alejagom         ###   ########.fr       */
+/*   Updated: 2024/09/25 22:11:44 by alejagom         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
 #include "libft.h"
-#include <unistd.h>
 
 int	ft_isalpha(int c)
 {

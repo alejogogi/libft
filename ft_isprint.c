@@ -6,14 +6,13 @@
 /*   By: alejagom <alejagom@student.42madird.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 21:55:24 by alejagom          #+#    #+#             */
-/*   Updated: 2024/09/25 21:55:28 by alejagom         ###   ########.fr       */
+/*   Updated: 2024/09/25 22:12:36 by alejagom         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "unistd.h"
 
 int	isprint(int c)
-
 {
 	if (c >= 33 && c <= 126)
 	{
