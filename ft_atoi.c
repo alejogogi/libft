@@ -3,10 +3,11 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: alejagom <alejagom@student.42.fr>          +#+  +:+       +#+        */
+/*   By: alejogogi <alejogogi@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 17:14:37 by alejagom          #+#    #+#             */
-/*   Updated: 2024/09/25 17:14:42 by alejagom         ###   ########.fr       */
+/*   Updated: 2024/09/25 17:20:19 by alejogogi        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+__PRAGMA_REDEFINE_EXTNAME
