@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: alejogogi <alejogogi@student.42.fr>        +#+  +:+       +#+        */
+/*   By: alejagom <alejagom@student.42madird.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/25 18:02:26 by alejogogi         #+#    #+#             */
-/*   Updated: 2024/09/25 18:02:48 by alejogogi        ###   ########.fr       */
+/*   Created: 2024/09/25 21:54:57 by alejagom          #+#    #+#             */
+/*   Updated: 2024/09/25 21:55:03 by alejagom         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: alejogogi <alejogogi@student.42.fr>        +#+  +:+       +#+        */
+/*   By: alejagom <alejagom@student.42madird.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/25 18:01:22 by alejogogi         #+#    #+#             */
-/*   Updated: 2024/09/25 18:01:34 by alejogogi        ###   ########.fr       */
+/*   Created: 2024/09/25 21:54:37 by alejagom          #+#    #+#             */
+/*   Updated: 2024/09/25 21:54:40 by alejagom         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 
 #include "unistd.h"
 

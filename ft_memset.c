@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: alejogogi <alejogogi@student.42.fr>        +#+  +:+       +#+        */
+/*   By: alejagom <alejagom@student.42madird.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/25 18:05:25 by alejogogi         #+#    #+#             */
-/*   Updated: 2024/09/25 18:05:35 by alejogogi        ###   ########.fr       */
+/*   Created: 2024/09/25 21:57:19 by alejagom          #+#    #+#             */
+/*   Updated: 2024/09/25 21:57:23 by alejagom         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

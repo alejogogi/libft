@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: alejogogi <alejogogi@student.42.fr>        +#+  +:+       +#+        */
+/*   By: alejagom <alejagom@student.42madird.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/25 18:07:00 by alejogogi         #+#    #+#             */
-/*   Updated: 2024/09/25 18:07:08 by alejogogi        ###   ########.fr       */
+/*   Created: 2024/09/25 21:57:04 by alejagom          #+#    #+#             */
+/*   Updated: 2024/09/25 21:57:13 by alejagom         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: alejogogi <alejogogi@student.42.fr>        +#+  +:+       +#+        */
+/*   By: alejagom <alejagom@student.42madird.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/25 18:06:32 by alejogogi         #+#    #+#             */
-/*   Updated: 2024/09/25 18:06:42 by alejogogi        ###   ########.fr       */
+/*   Created: 2024/09/25 21:56:54 by alejagom          #+#    #+#             */
+/*   Updated: 2024/09/25 21:56:58 by alejagom         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

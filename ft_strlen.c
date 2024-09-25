@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: alejogogi <alejogogi@student.42.fr>        +#+  +:+       +#+        */
+/*   By: alejagom <alejagom@student.42madird.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/25 18:03:59 by alejogogi         #+#    #+#             */
-/*   Updated: 2024/09/25 18:04:12 by alejogogi        ###   ########.fr       */
+/*   Created: 2024/09/25 21:57:52 by alejagom          #+#    #+#             */
+/*   Updated: 2024/09/25 21:57:55 by alejagom         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

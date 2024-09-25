@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: alejogogi <alejogogi@student.42.fr>        +#+  +:+       +#+        */
+/*   By: alejagom <alejagom@student.42madird.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/25 18:07:24 by alejogogi         #+#    #+#             */
-/*   Updated: 2024/09/25 18:07:31 by alejogogi        ###   ########.fr       */
+/*   Created: 2024/09/25 21:57:42 by alejagom          #+#    #+#             */
+/*   Updated: 2024/09/25 21:57:45 by alejagom         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

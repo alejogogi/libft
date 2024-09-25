@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: alejogogi <alejogogi@student.42.fr>        +#+  +:+       +#+        */
+/*   By: alejagom <alejagom@student.42madird.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/25 18:00:59 by alejogogi         #+#    #+#             */
-/*   Updated: 2024/09/25 18:01:11 by alejogogi        ###   ########.fr       */
+/*   Created: 2024/09/25 21:55:09 by alejagom          #+#    #+#             */
+/*   Updated: 2024/09/25 21:55:33 by alejagom         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

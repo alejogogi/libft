@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: alejogogi <alejogogi@student.42.fr>        +#+  +:+       +#+        */
+/*   By: alejagom <alejagom@student.42madird.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/25 18:03:08 by alejogogi         #+#    #+#             */
-/*   Updated: 2024/09/25 18:03:19 by alejogogi        ###   ########.fr       */
+/*   Created: 2024/09/25 21:55:24 by alejagom          #+#    #+#             */
+/*   Updated: 2024/09/25 21:55:28 by alejagom         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
