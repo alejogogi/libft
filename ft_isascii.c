@@ -6,15 +6,15 @@
 /*   By: alejagom <alejagom@student.42madird.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 21:54:57 by alejagom          #+#    #+#             */
-/*   Updated: 2024/09/25 21:55:03 by alejagom         ###   ########.fr       */
+/*   Updated: 2024/09/26 16:29:50 by alejagom         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "unistd.h"
+#include "libft.h"
 
-int	isalnum(int c)
+int	ft_isascii(int c)
 {
-	if (c >= 32 && c <= 126)
+	if (c >= 0 && c <= 126)
 	{
 		return (1);
 	}

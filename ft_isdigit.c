@@ -6,13 +6,13 @@
 /*   By: alejagom <alejagom@student.42madird.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 21:55:09 by alejagom          #+#    #+#             */
-/*   Updated: 2024/09/25 21:55:33 by alejagom         ###   ########.fr       */
+/*   Updated: 2024/09/26 16:28:38 by alejagom         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "unistd.h"
+#include "libft.h"
 
-int	isdigit(int c)
+int	ft_isdigit(int c)
 {
 	if (c >= 48 && c <= 57)
 	{

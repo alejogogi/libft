@@ -6,13 +6,13 @@
 /*   By: alejagom <alejagom@student.42madird.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 21:57:52 by alejagom          #+#    #+#             */
-/*   Updated: 2024/09/25 21:57:55 by alejagom         ###   ########.fr       */
+/*   Updated: 2024/09/26 16:55:33 by alejagom         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "unistd.h"
+#include "libft.h"
 
-int	strlen(char *str)
+int	ft_strlen(char *str)
 {
 	int	i;
 
