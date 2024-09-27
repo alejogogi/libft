@@ -3,14 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: alejagom <alejagom@student.42madird.fr>    +#+  +:+       +#+        */
+/*   By: alejogogi <alejogogi@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/25 21:56:54 by alejagom          #+#    #+#             */
-/*   Updated: 2024/09/25 22:41:47 by alejagom         ###   ########.fr       */
+/*   Created: 2024/09/27 17:55:40 by alejogogi         #+#    #+#             */
+/*   Updated: 2024/09/27 18:32:00 by alejogogi        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "string.h"
+#include "libft.h"
+#include <string.h>
 
 void	*memcpy(void *dest, const void *src, size_t n)
 {
@@ -18,7 +19,7 @@ void	*memcpy(void *dest, const void *src, size_t n)
 	const char	*s;
 	size_t	i;
 
-	d = (char *)s;
+	d = (char *)dest;
 	s = (const char *)src;
 	i = 0;
 	while (i < n)
