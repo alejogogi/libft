@@ -6,12 +6,13 @@
 /*   By: alejogogi <alejogogi@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/27 17:55:40 by alejogogi         #+#    #+#             */
-/*   Updated: 2024/09/27 18:32:00 by alejogogi        ###   ########.fr       */
+/*   Updated: 2024/09/28 18:07:42 by alejogogi        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <string.h>
+#include <stdio.h>
 
 void	*memcpy(void *dest, const void *src, size_t n)
 {
@@ -29,3 +30,17 @@ void	*memcpy(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
+
+/*
+int	main(void)
+{
+	char	str[] = "hola mundo";
+	char	dest[20];
+
+	printf("origen: %s\n", str);
+	memcpy(dest, str, strlen(str) + 1);
+	printf("Destino: %s\n", dest);
+
+	return 0;
+}
+*/

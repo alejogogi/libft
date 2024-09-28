@@ -3,14 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: alejagom <alejagom@student.42madird.fr>    +#+  +:+       +#+        */
+/*   By: alejogogi <alejogogi@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 21:57:04 by alejagom          #+#    #+#             */
-/*   Updated: 2024/09/25 22:49:13 by alejagom         ###   ########.fr       */
+/*   Updated: 2024/09/28 18:31:36 by alejogogi        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>  // Para usar size_t
+#include <stddef.h>
+#include <stdio.h>
+#include <string.h>
+#include "libft.h"
 
 void	*memmove(void *dest, const void *src, size_t n)
 {
@@ -39,3 +42,15 @@ void	*memmove(void *dest, const void *src, size_t n)
     }
     return dest;
 }
+
+/*
+int	main(void)
+{
+	char	str[] = "123456789";
+
+	printf("primero %s\n", str);
+	memmove(str + 4, str, 6);
+	printf("segundo %s\n", str);
+	return 0;
+}
+*/
