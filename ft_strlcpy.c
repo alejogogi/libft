@@ -3,32 +3,49 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: alejagom <alejagom@student.42madird.fr>    +#+  +:+       +#+        */
+/*   By: alejogogi <alejogogi@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 21:57:42 by alejagom          #+#    #+#             */
-/*   Updated: 2024/09/25 21:57:45 by alejagom         ###   ########.fr       */
+/*   Updated: 2024/09/29 18:51:11 by alejogogi        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include <stddef.h> /*borrar libreria*/
+#include <stdio.h> /*borrar libreria*/
+#include "libft.h"
 
-size_t strlcpy(char *dest, const char *src, size_t size)
+size_t	strlcpy(char *dest, const char *src, size_t size)
 {
-    size_t i = 0;
-    size_t src_len = 0;
+	size_t	i;
+	size_t	b;
 
-    while (src[src_len] != '\0')
-    {
-        src_len++;
-    }
-    if (size > 0)
-    {
-        while (i < size - 1 && src[i] != '\0')
-        {
-            dest[i] = src[i];
-            i++;
-        }
-            dest[i] = '\0';
-    }
-    return (src_len);
+	i = 0;
+	b = 0;
+	while (src[b] != '\0')
+	{
+		b++;
+	}
+	if (size > 0)
+	{
+		while (i < (size -1) && src[i] != '\0')
+		{
+			dest[i] = src[i];
+			i++;
+		}
+		dest[i] = '\0';
+	}
+	return (b);
 }
+
+/*
+int	main(void)
+{
+	char	s[] = "buenasss hola";
+	char	dest[15];
+	size_t	result;
+
+	result = strlcpy(dest, s, sizeof(dest));
+	printf("cadena %zu\n", result);
+	return 0;
+}
+*/

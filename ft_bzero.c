@@ -6,12 +6,12 @@
 /*   By: alejogogi <alejogogi@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 21:54:08 by alejagom          #+#    #+#             */
-/*   Updated: 2024/09/27 17:59:19 by alejogogi        ###   ########.fr       */
+/*   Updated: 2024/09/29 17:30:15 by alejogogi        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <string.h>
+#include <string.h> /*borrar libreria*/
 
 void	ft_bzero(void *s, size_t n)
 {
