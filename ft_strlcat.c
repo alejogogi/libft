@@ -6,7 +6,7 @@
 /*   By: alejogogi <alejogogi@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 21:57:30 by alejagom          #+#    #+#             */
-/*   Updated: 2024/09/29 18:50:23 by alejogogi        ###   ########.fr       */
+/*   Updated: 2024/09/29 18:52:44 by alejogogi        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,11 +18,10 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 {
 	size_t	dest_len;
 	size_t	src_len;
-	size_t	i;
+	size_t	i = 0;
 	
 	dest_len = 0;
 	src_len = 0;
-	i = 0;
 	while (dest[dest_len] != '\0' && dest_len < size)
 	{
 		dest_len++;
