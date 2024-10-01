@@ -6,11 +6,11 @@
 /*   By: alejogogi <alejogogi@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/30 16:52:50 by alejogogi         #+#    #+#             */
-/*   Updated: 2024/09/30 17:21:27 by alejogogi        ###   ########.fr       */
+/*   Updated: 2024/10/01 19:03:46 by alejogogi        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>/*borrar libreria*/
+#include <string.h>/*borrar*/
 #include <stdio.h>/*borrar libreria*/
 #include "libft.h"
 
@@ -34,6 +34,7 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	return (0);
 }
 
+/*
 int	main(void)
 {
 	const char	*str1;
@@ -45,15 +46,16 @@ int	main(void)
 	resultado = ft_strncmp(str1, str2, 5);
 	if (resultado == 0)
 	{
-		printf("las primeras palabras son iguales \n", str1, str2);
+		printf("las primeras palabras son iguales \n");
 	}
-	else (resultado > 0);
+	else if (resultado > 0)
 	{
-		printf("la cadena '%s' es mayor que la cadena '%s'", str1, str2);
+		printf("la cadena '%s' es mayor que la cadena '%s'\n", str1, str2);
 	}
-	else 
+	else
 	{
-		printf("la cadena '%s' es menor que la cadena '%s'", str1, str2);
+		printf("la cadena '%s' es menor que la cadena '%s'\n", str1, str2);
 	}
 	return (0);
 }
+*/
