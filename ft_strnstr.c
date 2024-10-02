@@ -6,7 +6,7 @@
 /*   By: alejogogi <alejogogi@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 18:38:47 by alejogogi         #+#    #+#             */
-/*   Updated: 2024/10/01 19:02:58 by alejogogi        ###   ########.fr       */
+/*   Updated: 2024/10/02 17:06:59 by alejogogi        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,17 +18,17 @@ char	*ft_strnstr(const char *principal, const char *subcadena, size_t n)
 	size_t	i;
 	size_t	a;
 
-	a = 0;
-	i = 0;
 	if (!*subcadena)
 	{
 		return ((char *)principal);
 	}
-	while (i< n)
+	i = 0;
+	while (i < n && principal[i])
 	{
+		a = 0;
 		while (principal[i + a] == subcadena[a] && (i + a) < n)
 		{
-			if (!principal [a + 1])
+			if (subcadena[a + 1] == '\0')
 			{
 				return ((char *)&principal[i]);
 			}
@@ -39,6 +39,7 @@ char	*ft_strnstr(const char *principal, const char *subcadena, size_t n)
 	return (NULL);
 }
 
+/*
 int	main(void)
 {
 	const char	*texto;
@@ -60,4 +61,4 @@ int	main(void)
 	}
 	return (0);
 }
-/*pendiente de correccion y exolicacion*/
+*/
