@@ -10,9 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include <ctype.h> /*borrar libreria*/
 #include <stdio.h> /*borrar libreria*/
-#include "libft.h"
 
 int	ft_tolower(int c)
 {
@@ -36,6 +36,6 @@ int	main(void)
 	printf("letra introducida %c\n", letra);
 	letra_mayuscula = ft_tolower(letra);
 	printf("mayuscula %c\n", letra_mayuscula);
-	return 0;
+	return (0);
 }
 */

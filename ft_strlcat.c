@@ -11,14 +11,15 @@
 /* ************************************************************************** */
 
 #include <stddef.h> /*borrar libreria*/
-#include <stdio.h> /*borrar libreria*/
+#include <stdio.h>  /*borrar libreria*/
+
 /*#include "libft"*/
 
 size_t	ft_strlcat(char *dest, const char *src, size_t size)
 {
 	size_t	dest_len;
 	size_t	i;
-	
+
 	i = 0;
 	dest_len = 0;
 	while (dest[dest_len] != '\0' && dest_len < size)
@@ -36,11 +37,11 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 
 int	main(void)
 {
-	char	dest[20] = "Holla";
+	char		dest[20] = "Holla";
 	const char	*src = " mundo";
-	
+
 	printf("primera: %s\n", dest);
 	ft_strlcat(dest, src, sizeof(dest));
 	printf("despues: %s\n", dest);
-	return 0;
+	return (0);
 }

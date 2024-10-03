@@ -10,14 +10,14 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>/*borrar libraria*/
 #include "libft.h"
+#include <stdio.h>/*borrar libraria*/
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	const unsigned char	*p1;
 	const unsigned char	*p2;
-	size_t	i;
+	size_t				i;
 
 	p1 = (const unsigned char *)s1;
 	p2 = (const unsigned char *)s2;
@@ -38,8 +38,8 @@ int	main(void)
 {
 	const char	*str1;
 	const char	*str2;
-	int	result;
-	size_t	n;
+	int			result;
+	size_t		n;
 
 	str1 = "Hola mundo";
 	str2 = "Hola mundo";

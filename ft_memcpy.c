@@ -11,14 +11,14 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <string.h>
 #include <stdio.h>
+#include <string.h>
 
 void	*memcpy(void *dest, const void *src, size_t n)
 {
-	char	*d;
+	char		*d;
 	const char	*s;
-	size_t	i;
+	size_t		i;
 
 	d = (char *)dest;
 	s = (const char *)src;
@@ -40,7 +40,6 @@ int	main(void)
 	printf("origen: %s\n", str);
 	memcpy(dest, str, strlen(str) + 1);
 	printf("Destino: %s\n", dest);
-
-	return 0;
+	return (0);
 }
 */

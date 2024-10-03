@@ -10,9 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h> /*borrar libreria*/
-#include <stdio.h> /*borrar libreria*/
 #include "libft.h"
+#include <stdio.h>  /*borrar libreria*/
+#include <string.h> /*borrar libreria*/
 
 char	*ft_strchr(const char *str, int c)
 {
@@ -36,7 +36,7 @@ int	main(void)
 	char	*string;
 	char	buscar;
 	char	*resultado;
-	
+
 	string = "buenas Mundo";
 	buscar = 'z';
 	resultado = ft_strchr(string, buscar);

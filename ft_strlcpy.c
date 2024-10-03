@@ -10,9 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h> /*borrar libreria*/
-#include <stdio.h> /*borrar libreria*/
 #include "libft.h"
+#include <stddef.h> /*borrar libreria*/
+#include <stdio.h>  /*borrar libreria*/
 
 size_t	strlcpy(char *dest, const char *src, size_t size)
 {
@@ -27,7 +27,7 @@ size_t	strlcpy(char *dest, const char *src, size_t size)
 	}
 	if (size > 0)
 	{
-		while (i < (size -1) && src[i] != '\0')
+		while (i < (size - 1) && src[i] != '\0')
 		{
 			dest[i] = src[i];
 			i++;
@@ -46,6 +46,6 @@ int	main(void)
 
 	result = strlcpy(dest, s, sizeof(dest));
 	printf("cadena %zu\n", result);
-	return 0;
+	return (0);
 }
 */

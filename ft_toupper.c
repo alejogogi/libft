@@ -11,8 +11,8 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h> /*borrar libreria*/
 #include <ctype.h> /*borrar libreria*/
+#include <stdio.h> /*borrar libreria*/
 
 int	ft_toupper(int c)
 {
@@ -35,6 +35,6 @@ int	main(void)
 	printf("letra introducida %c\n", letra);
 	letra_mayuscula = ft_toupper(letra);
 	printf("mayuscula %c\n", letra_mayuscula);
-	return 0;
+	return (0);
 }
 */

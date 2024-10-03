@@ -10,8 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>/*borrar libreria*/
 #include "libft.h"
+#include <stdio.h>/*borrar libreria*/
 
 char	*ft_strnstr(const char *principal, const char *subcadena, size_t n)
 {
@@ -44,8 +44,8 @@ int	main(void)
 {
 	const char	*texto;
 	const char	*buscar;
-	char		 *res;
-	size_t	i;
+	char		*res;
+	size_t		i;
 
 	texto = "Holla mundo";
 	buscar = "mundo";

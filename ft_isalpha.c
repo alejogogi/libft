@@ -29,7 +29,7 @@ int	ft_isalpha(int c)
 int	main(void)
 {
 	char	pru;
-	
+
 	pru = 'o';
 	if (ft_isalpha(pru))
 	{

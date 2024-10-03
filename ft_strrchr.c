@@ -10,14 +10,14 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h> /*borrar libreria*/
-#include <stdio.h> /*borrar libreria*/
 #include "libft.h"
+#include <stdio.h>  /*borrar libreria*/
+#include <string.h> /*borrar libreria*/
 
 char	*ft_strrchr(char *str, int c)
 {
 	const char	*last;
-	char	a;
+	char		a;
 
 	a = (char)c;
 	last = NULL;
