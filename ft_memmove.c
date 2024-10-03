@@ -6,7 +6,7 @@
 /*   By: alejogogi <alejogogi@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 21:57:04 by alejagom          #+#    #+#             */
-/*   Updated: 2024/10/03 12:42:34 by alejogogi        ###   ########.fr       */
+/*   Updated: 2024/10/03 19:27:35 by alejogogi        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 #include <stdio.h>
 #include <string.h>
 
-void	*memmove(void *dest, const void *src, size_t n)
+void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	char		*d;
 	const char	*s;
@@ -49,7 +49,7 @@ int	main(void)
 	char	str[] = "123456789";
 
 	printf("primero %s\n", str);
-	memmove(str + 4, str, 6);
+	ft_memmove(str + 4, str, 6);
 	printf("segundo %s\n", str);
 	return (0);
 }

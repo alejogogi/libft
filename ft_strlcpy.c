@@ -6,7 +6,7 @@
 /*   By: alejogogi <alejogogi@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 21:57:42 by alejagom          #+#    #+#             */
-/*   Updated: 2024/09/29 18:51:11 by alejogogi        ###   ########.fr       */
+/*   Updated: 2024/10/03 20:14:32 by alejogogi        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include <stddef.h> /*borrar libreria*/
 #include <stdio.h>  /*borrar libreria*/
 
-size_t	strlcpy(char *dest, const char *src, size_t size)
+size_t	_ft_strlcpy(char *dest, const char *src, size_t size)
 {
 	size_t	i;
 	size_t	b;
