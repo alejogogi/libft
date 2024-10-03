@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: alejogogi <alejogogi@student.42.fr>        +#+  +:+       +#+        */
+/*   By: alejagom <alejagom@student.42madird.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 21:57:30 by alejagom          #+#    #+#             */
-/*   Updated: 2024/09/30 11:07:05 by alejogogi        ###   ########.fr       */
+/*   Updated: 2024/10/03 14:32:49 by alejagom         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,17 +31,20 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 		dest[dest_len + i] = src[i];
 		i++;
 	}
-	dest[dest_len + i] = '\0';
-	return (dest_len);
+	return (dest_len + i);
 }
 
+/*
 int	main(void)
 {
 	char		dest[20] = "Holla";
 	const char	*src = " mundo";
 
 	printf("primera: %s\n", dest);
-	ft_strlcat(dest, src, sizeof(dest));
+	size_t 	final = ft_strlcat(dest, src, sizeof(dest));
 	printf("despues: %s\n", dest);
+	printf("long: %zu\n", final);
+	
 	return (0);
 }
+*/
