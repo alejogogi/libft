@@ -6,7 +6,7 @@
 /*   By: alejagom <alejagom@student.42madird.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 21:54:57 by alejagom          #+#    #+#             */
-/*   Updated: 2024/09/26 16:29:50 by alejagom         ###   ########.fr       */
+/*   Updated: 2024/10/03 16:48:38 by alejagom         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,3 +23,20 @@ int	ft_isascii(int c)
 		return (0);
 	}
 }
+
+/*
+int	main(void)
+{
+	char	i ='*';
+
+	if (ft_isascii(i))
+	{
+		printf("el caracter %c alfanumerico. \n", i);
+	}
+	else
+	{
+		printf("el caracter %c no es alfanumerico. \n", i);
+	}
+	return(0);
+}
+*/
