@@ -3,25 +3,26 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: alejagom <alejagom@student.42madird.fr>    +#+  +:+       +#+        */
+/*   By: alejogogi <alejogogi@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/25 21:57:19 by alejagom          #+#    #+#             */
-/*   Updated: 2024/10/03 18:04:29 by alejagom         ###   ########.fr       */
+/*   Created: 2024/10/07 08:43:00 by alejogogi         #+#    #+#             */
+/*   Updated: 2024/10/07 08:43:06 by alejogogi        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdio.h>/*borrar libreria*/
 #include <string.h> /*borrar libreria*/
+#include <stddef.h>
 
-void	*ft_memset(void *str, int c, size_t num)/*llena los bloques de memoria con un caracter*/
+void	*ft_memset(void *str, int c, size_t n)/*llena los bloques de memoria con un caracter*/
 {
 	unsigned char	*a;
 	size_t			b;
 
 	b = 0;
 	a = (unsigned char *)str;
-	while (b < num)
+	while (b < n)
 	{
 		a[b] = (unsigned char)c;
 		b++;
@@ -29,11 +30,10 @@ void	*ft_memset(void *str, int c, size_t num)/*llena los bloques de memoria con 
 	return (str);
 }
 
-/*
 int	main(void)
 {
 	char	str[15] = "buenastardes";
-	unsigned char c;
+	char	c;
 	size_t	n;
 
 	printf("letra a poner:\n");
@@ -45,4 +45,3 @@ int	main(void)
 	printf("string: %s\n", str);
 	return(0);
 }
-*/
