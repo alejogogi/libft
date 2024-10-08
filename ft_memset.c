@@ -6,7 +6,7 @@
 /*   By: alejogogi <alejogogi@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 08:43:00 by alejogogi         #+#    #+#             */
-/*   Updated: 2024/10/07 08:43:06 by alejogogi        ###   ########.fr       */
+/*   Updated: 2024/10/08 10:46:58 by alejogogi        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 #include <string.h> /*borrar libreria*/
 #include <stddef.h>
 
-void	*ft_memset(void *str, int c, size_t n)/*llena los bloques de memoria con un caracter*/
+void	*ft_memset(void *str, int c, size_t n)
 {
 	unsigned char	*a;
 	size_t			b;
@@ -30,6 +30,7 @@ void	*ft_memset(void *str, int c, size_t n)/*llena los bloques de memoria con un
 	return (str);
 }
 
+/*
 int	main(void)
 {
 	char	str[15] = "buenastardes";
@@ -45,3 +46,4 @@ int	main(void)
 	printf("string: %s\n", str);
 	return(0);
 }
+*/
