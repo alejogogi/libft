@@ -6,7 +6,7 @@
 /*   By: alejogogi <alejogogi@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/03 19:13:01 by alejogogi         #+#    #+#             */
-/*   Updated: 2024/10/08 10:33:13 by alejogogi        ###   ########.fr       */
+/*   Updated: 2024/10/08 18:31:09 by alejogogi        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,7 @@ char	*ft_strnstr(const char *principal, const char *subcadena, size_t n);
 int	ft_atoi(const char *str);
 void	*ft_calloc(size_t num, size_t size);
 char	*ft_strdup(const char *str);
+char	*ft_substr(char const *s, unsigned int start, size_t len);
 
 #endif // LIBFT_H
 */
