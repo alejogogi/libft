@@ -6,7 +6,7 @@
 /*   By: alejogogi <alejogogi@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 18:32:04 by alejogogi         #+#    #+#             */
-/*   Updated: 2024/10/10 10:57:44 by alejogogi        ###   ########.fr       */
+/*   Updated: 2024/10/10 18:29:23 by alejogogi        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,9 +30,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	str2 = ft_strlen(s2);
 	resultado = (char *)malloc((str1 + str2 + 1) * sizeof(char));
 	if (resultado == NULL)
-	{
 		return (NULL);
-	}
 	while (i < str1)
 	{
 		resultado[i] = s1[i];
