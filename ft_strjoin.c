@@ -6,15 +6,64 @@
 /*   By: alejogogi <alejogogi@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 18:32:04 by alejogogi         #+#    #+#             */
-/*   Updated: 2024/10/08 18:37:17 by alejogogi        ###   ########.fr       */
+/*   Updated: 2024/10/10 10:55:11 by alejogogi        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>/*borrar libreria*/
-#include <unistd.h>/*borrar libreria*/
 #include "libft.h"
+#include <stdio.h>  /*borrar libreria*/
+#include <stdlib.h> //borrar libreria
+#include <string.h> //borrar libreria
+#include <unistd.h> /*borrar libreria*/
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
-	
+	char	*resultado;
+	size_t	str1;
+	size_t	str2;
+	size_t	i;
+	size_t	a;
+
+	i = 0;
+	a = 0;
+	str1 = ft_strlen(s1);
+	str2 = ft_strlen(s2);
+	resultado = (char *)malloc((str1 + str2 + 1) * sizeof(char));
+	if (resultado == NULL)
+	{
+		return (NULL);
+	}
+	while (i < str1)
+	{
+		resultado[i] = s1[i];
+		i++;
+	}
+	while (a < str2)
+	{
+		resultado[i + a] = s2[a];
+		a++;
+	}
+	resultado[i + a] = '\0';
+	return (resultado);
 }
+
+/*
+int	main(void)
+{
+	const char	*str1 = "holla ";
+	const char	*str2 = "mundo";
+	char		*resultado;
+
+	resultado = ft_strjoin(str1, str2);
+	if (resultado != NULL)
+	{
+		printf("resultado: %s\n", resultado);
+		free(resultado);
+	}
+	else
+	{
+		printf("error al unir cadenas. \n");
+	}
+	return(0);
+}
+*/
