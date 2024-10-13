@@ -6,7 +6,7 @@
 /*   By: alejogogi <alejogogi@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/10 18:30:17 by alejogogi         #+#    #+#             */
-/*   Updated: 2024/10/12 18:47:37 by alejogogi        ###   ########.fr       */
+/*   Updated: 2024/10/13 10:46:51 by alejogogi        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	return (a);
 }
 
+/*
 int	main(void)
 {
 	char s1[] = " ----hola mundo!---";
@@ -61,3 +62,4 @@ int	main(void)
 	}
 	return (0);
 }
+*/
