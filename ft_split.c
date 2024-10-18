@@ -6,7 +6,7 @@
 /*   By: alejogogi <alejogogi@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/13 09:53:46 by alejogogi         #+#    #+#             */
-/*   Updated: 2024/10/17 22:35:22 by alejogogi        ###   ########.fr       */
+/*   Updated: 2024/10/18 09:45:48 by alejogogi        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -144,13 +144,16 @@ char	**ft_split(const char *s, char c)
 	{
 		ptr[n] = ft_substr(s, aux_1[n], (aux_2[n] - aux_1[n] + 1));
 		if (!ptr)
+		{
 			return (free_memory(ptr, n, aux_1, aux_2));
-			n++;
+		}
+		n++;
 	}
 	free(aux_1);
 	free(aux_2);
 	return(ptr);
 }
+
 /*
 int main(void)
 {
