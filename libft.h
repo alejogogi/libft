@@ -6,13 +6,17 @@
 /*   By: alejogogi <alejogogi@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/03 19:13:01 by alejogogi         #+#    #+#             */
-/*   Updated: 2024/10/18 09:56:44 by alejogogi        ###   ########.fr       */
+/*   Updated: 2024/10/19 18:55:38 by alejogogi        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
+
 #ifndef LIBFT_H
 #define LIBFT_H
+#include <stddef.h>
+#include <unistd.h>
+#include <stdio.h>
+
 
 int	ft_isalpha(int c);
 int	ft_isdigit(int c);
@@ -50,4 +54,3 @@ void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
 
 #endif // LIBFT_H
-*/
