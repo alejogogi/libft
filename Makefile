@@ -6,7 +6,7 @@
 #    By: alejogogi <alejogogi@student.42.fr>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/18 10:06:50 by alejogogi         #+#    #+#              #
-#    Updated: 2024/10/18 10:33:19 by alejogogi        ###   ########.fr        #
+#    Updated: 2024/10/19 18:12:52 by alejogogi        ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,6 +29,8 @@ INCLUDE = libft.h
 
 AR = ar rcs
 RM = rm -r
+
+.PHONY: all clean fclean re
 
 all: $(NAME)
 
