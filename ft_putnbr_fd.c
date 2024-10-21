@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: alejagom <alejagom@student.42madird.fr>    +#+  +:+       +#+        */
+/*   By: alejogogi <alejogogi@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/18 08:49:31 by alejogogi         #+#    #+#             */
-/*   Updated: 2024/10/21 01:45:26 by alejagom         ###   ########.fr       */
+/*   Updated: 2024/10/21 04:52:53 by alejogogi        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,8 @@ static void	ft_is_negative(int *num, int fd)
 
 void	ft_putnbr_fd(int n, int fd)
 {
-	unsigned int	num;
-	char			c;
+	unsigned int			num;
+	unsigned char			c;
 
 	if (n == -2147483648)
 	{
