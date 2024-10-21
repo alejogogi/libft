@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: alejagom <alejagom@student.42madird.fr>    +#+  +:+       +#+        */
+/*   By: alejogogi <alejogogi@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/13 09:53:46 by alejogogi         #+#    #+#             */
-/*   Updated: 2024/10/21 01:47:22 by alejagom         ###   ########.fr       */
+/*   Updated: 2024/10/21 02:50:58 by alejogogi        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,8 +39,8 @@ static void	*ft_counter_end(const char *s, char c)
 	i = 0;
 	t = 0;
 	sup = malloc(((ft_count_words(s, c))) * sizeof(size_t));
-	if(!sup)
-	return(NULL);
+	if (!sup)
+		return (NULL);
 	while (s[i])
 	{
 		if (s[i] != c && (s[i + 1] == '\0' || s[i + 1] == c))
@@ -50,7 +50,7 @@ static void	*ft_counter_end(const char *s, char c)
 		}
 		i++;
 	}
-	return(sup);
+	return (sup);
 }
 
 static void	*free_memory(char **resultado, int i, size_t *aux_1, size_t *aux_2)
@@ -63,7 +63,7 @@ static void	*free_memory(char **resultado, int i, size_t *aux_1, size_t *aux_2)
 	free(resultado);
 	free(aux_1);
 	free(aux_2);
-	return(NULL);
+	return (NULL);
 }
 
 static size_t	*ft_counter_begin(const char *s, char c)
@@ -89,7 +89,7 @@ static size_t	*ft_counter_begin(const char *s, char c)
 	return (aux_1);
 }
 
-static char		*ft_substr(char const *s, unsigned int start, size_t len)
+static char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char	*substr;
 	size_t	i;
@@ -124,18 +124,18 @@ char	**ft_split(const char *s, char c)
 	size_t	*aux_1;
 	size_t	*aux_2;
 	int		n;
-	
+
 	if (!s)
-	return(NULL);
+		return (NULL);
 	aux_1 = ft_counter_begin(s, c);
 	if (!aux_1)
-	return(NULL);
+		return (NULL);
 	aux_2 = ft_counter_end(s, c);
 	if (!aux_2)
-	return(free(aux_1), NULL);
+		return (free(aux_1), NULL);
 	ptr = (char **)calloc((ft_count_words(s, c) + 1), sizeof(char *));
 	if (!ptr)
-	return(free(aux_1), free(aux_2), NULL);
+		return (free(aux_1), free(aux_2), NULL);
 	n = 0;
 	while (n < ft_count_words(s, c))
 	{
@@ -148,34 +148,37 @@ char	**ft_split(const char *s, char c)
 	}
 	free(aux_1);
 	free(aux_2);
-	return(ptr);
+	return (ptr);
 }
 
 /*
-int main(void)
+int	main(void)
 {
-    const char *str = "hola,mundo,esto,es,una,prueba";
-    char delimiter = ','; 
-    char **resultado = ft_split(str, delimiter);
-    
-    if (!resultado)
-    {
-        printf("Error al dividir la cadena\n");
-        return (1);
-    }
-    int i = 0;
-    while (resultado[i] != NULL)
-    {
-        printf("Subcadena %d: %s\n", i, resultado[i]);
-        i++;
-    }
-    i = 0;
-    while (resultado[i] != NULL)
-    {
-        free(resultado[i]);
-        i++;
-    }
-    free(resultado);
+	const char	*str = "hola,mundo,esto,es,una,prueba";
+	char		delimiter;
+	char		**resultado;
+	int			i;
+
+	delimiter = ',';
+	resultado = ft_split(str, delimiter);
+	if (!resultado)
+	{
+		printf("Error al dividir la cadena\n");
+		return (1);
+	}
+	i = 0;
+	while (resultado[i] != NULL)
+	{
+		printf("Subcadena %d: %s\n", i, resultado[i]);
+		i++;
+	}
+	i = 0;
+	while (resultado[i] != NULL)
+	{
+		free(resultado[i]);
+		i++;
+	}
+	free(resultado);
 	return (0);
 }
 */
