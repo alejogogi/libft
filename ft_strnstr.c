@@ -3,34 +3,34 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: alejogogi <alejogogi@student.42.fr>        +#+  +:+       +#+        */
+/*   By: alejagom <alejagom@student.42madird.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 18:38:47 by alejogogi         #+#    #+#             */
-/*   Updated: 2024/10/02 17:06:59 by alejogogi        ###   ########.fr       */
+/*   Updated: 2024/10/21 01:33:34 by alejagom         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdio.h>/*borrar libreria*/
 
-char	*ft_strnstr(const char *principal, const char *subcadena, size_t n)
+char	*ft_strnstr(const char *haystak, const char *needle, size_t n)
 {
 	size_t	i;
 	size_t	a;
 
-	if (!*subcadena)
+	if (!*needle)
 	{
-		return ((char *)principal);
+		return ((char *)haystak);
 	}
 	i = 0;
-	while (i < n && principal[i])
+	while (i < n && haystak[i])
 	{
 		a = 0;
-		while (principal[i + a] == subcadena[a] && (i + a) < n)
+		while (haystak[i + a] == needle[a] && (i + a) < n)
 		{
-			if (subcadena[a + 1] == '\0')
+			if (needle[a + 1] == '\0')
 			{
-				return ((char *)&principal[i]);
+				return ((char *)&haystak[i]);
 			}
 			a++;
 		}

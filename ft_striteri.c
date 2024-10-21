@@ -3,14 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: alejogogi <alejogogi@student.42.fr>        +#+  +:+       +#+        */
+/*   By: alejagom <alejagom@student.42madird.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 22:57:33 by alejogogi         #+#    #+#             */
-/*   Updated: 2024/10/17 23:08:46 by alejogogi        ###   ########.fr       */
+/*   Updated: 2024/10/21 01:48:41 by alejagom         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>//borrar libreria 
 #include "libft.h"
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char*))

@@ -3,17 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: alejogogi <alejogogi@student.42.fr>        +#+  +:+       +#+        */
+/*   By: alejagom <alejagom@student.42madird.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 08:43:00 by alejogogi         #+#    #+#             */
-/*   Updated: 2024/10/08 10:46:58 by alejogogi        ###   ########.fr       */
+/*   Updated: 2024/10/21 01:44:38 by alejagom         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>/*borrar libreria*/
-#include <string.h> /*borrar libreria*/
-#include <stddef.h>
 
 void	*ft_memset(void *str, int c, size_t n)
 {

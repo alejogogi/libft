@@ -3,16 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: alejogogi <alejogogi@student.42.fr>        +#+  +:+       +#+        */
+/*   By: alejagom <alejagom@student.42madird.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 21:57:42 by alejagom          #+#    #+#             */
-/*   Updated: 2024/10/03 20:14:32 by alejogogi        ###   ########.fr       */
+/*   Updated: 2024/10/21 01:50:47 by alejagom         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stddef.h> /*borrar libreria*/
-#include <stdio.h>  /*borrar libreria*/
 
 size_t	_ft_strlcpy(char *dest, const char *src, size_t size)
 {

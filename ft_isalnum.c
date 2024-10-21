@@ -6,12 +6,11 @@
 /*   By: alejagom <alejagom@student.42madird.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 21:54:37 by alejagom          #+#    #+#             */
-/*   Updated: 2024/10/03 18:04:29 by alejagom         ###   ########.fr       */
+/*   Updated: 2024/10/21 01:38:46 by alejagom         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>/*borrar libreria*/
 
 int	ft_isalnum(int c)
 {

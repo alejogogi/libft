@@ -6,14 +6,11 @@
 /*   By: alejagom <alejagom@student.42madird.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 21:57:30 by alejagom          #+#    #+#             */
-/*   Updated: 2024/10/03 14:32:49 by alejagom         ###   ########.fr       */
+/*   Updated: 2024/10/21 01:50:16 by alejagom         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h> /*borrar libreria*/
-#include <stdio.h>  /*borrar libreria*/
-
-/*#include "libft"*/
+#include "libft.h"
 
 size_t	ft_strlcat(char *dest, const char *src, size_t size)
 {

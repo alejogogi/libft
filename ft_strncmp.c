@@ -3,15 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: alejogogi <alejogogi@student.42.fr>        +#+  +:+       +#+        */
+/*   By: alejagom <alejagom@student.42madird.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/30 16:52:50 by alejogogi         #+#    #+#             */
-/*   Updated: 2024/10/01 19:03:46 by alejogogi        ###   ########.fr       */
+/*   Updated: 2024/10/21 01:51:30 by alejagom         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>/*borrar*/
-#include <stdio.h>/*borrar libreria*/
 #include "libft.h"
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)

@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: alejogogi <alejogogi@student.42.fr>        +#+  +:+       +#+        */
+/*   By: alejagom <alejagom@student.42madird.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/18 08:49:31 by alejogogi         #+#    #+#             */
-/*   Updated: 2024/10/18 09:18:20 by alejogogi        ###   ########.fr       */
+/*   Updated: 2024/10/21 01:45:26 by alejagom         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <unistd.h>//borrar libreria 
 
 static void	ft_is_negative(int *num, int fd)
 {

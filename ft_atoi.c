@@ -3,16 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: alejogogi <alejogogi@student.42.fr>        +#+  +:+       +#+        */
+/*   By: alejagom <alejagom@student.42madird.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 21:54:19 by alejagom          #+#    #+#             */
-/*   Updated: 2024/10/10 10:57:53 by alejogogi        ###   ########.fr       */
+/*   Updated: 2024/10/21 01:38:14 by alejagom         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>/*borrar librera*/
-#include <unistd.h>/*borrar libreria*/
-#include <string.h>/*borrar libreria*/
 #include "libft.h"
 
 int	ft_atoi(const char *str)

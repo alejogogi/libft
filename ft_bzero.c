@@ -3,16 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: alejogogi <alejogogi@student.42.fr>        +#+  +:+       +#+        */
+/*   By: alejagom <alejagom@student.42madird.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 21:54:08 by alejagom          #+#    #+#             */
-/*   Updated: 2024/10/03 13:31:28 by alejogogi        ###   ########.fr       */
+/*   Updated: 2024/10/21 01:38:35 by alejagom         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>  /*borrar libreria*/
-#include <string.h> /*borrar libreria*/
 
 void	ft_bzero(void *s, size_t n)
 {

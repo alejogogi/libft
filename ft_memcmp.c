@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: alejogogi <alejogogi@student.42.fr>        +#+  +:+       +#+        */
+/*   By: alejagom <alejagom@student.42madird.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 18:01:28 by alejogogi         #+#    #+#             */
-/*   Updated: 2024/10/01 18:32:18 by alejogogi        ###   ########.fr       */
+/*   Updated: 2024/10/21 01:42:09 by alejagom         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>/*borrar libraria*/
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {

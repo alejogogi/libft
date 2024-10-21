@@ -3,21 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: alejogogi <alejogogi@student.42.fr>        +#+  +:+       +#+        */
+/*   By: alejagom <alejagom@student.42madird.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 06:56:58 by alejogogi         #+#    #+#             */
-/*   Updated: 2024/10/08 10:31:42 by alejogogi        ###   ########.fr       */
+/*   Updated: 2024/10/21 01:48:31 by alejagom         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h> /*borrar libreia*/
-#include <stdlib.h>/*borrar libreria*/
-#include <string.h>/*borrar libreria*/
-#include <unistd.h>/*borrar libreria*/
 
 char	*ft_strdup(const char *str)
-/*crea una copia exacta del string en la memoria*/
 {
 	size_t	longitud;
 	size_t	i;

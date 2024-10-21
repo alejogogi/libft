@@ -3,17 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: alejogogi <alejogogi@student.42.fr>        +#+  +:+       +#+        */
+/*   By: alejagom <alejagom@student.42madird.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 18:39:16 by alejogogi         #+#    #+#             */
-/*   Updated: 2024/10/08 10:30:51 by alejogogi        ###   ########.fr       */
+/*   Updated: 2024/10/21 01:36:51 by alejagom         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h> /*borrar libreria*/
-#include <stdlib.h>/*borrar libreria*/
-#include <string.h>/*borrar libreria*/
 
 void	*ft_calloc(size_t num, size_t size)
 {
@@ -24,7 +21,7 @@ void	*ft_calloc(size_t num, size_t size)
 	{
 		return (NULL);
 	}
-	memset(ptr, 0, num * size);
+	ft_memset(ptr, 0, num * size);
 	return (ptr);
 }
 

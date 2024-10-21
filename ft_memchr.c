@@ -3,16 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: alejogogi <alejogogi@student.42.fr>        +#+  +:+       +#+        */
+/*   By: alejagom <alejagom@student.42madird.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 16:42:43 by alejogogi         #+#    #+#             */
-/*   Updated: 2024/10/01 17:49:44 by alejogogi        ###   ########.fr       */
+/*   Updated: 2024/10/21 01:42:00 by alejagom         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h> /*borrar libreria*/
-#include <string.h>/*borrar libraria*/
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {

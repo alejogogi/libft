@@ -3,16 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: alejogogi <alejogogi@student.42.fr>        +#+  +:+       +#+        */
+/*   By: alejagom <alejagom@student.42madird.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/30 12:15:01 by alejogogi         #+#    #+#             */
-/*   Updated: 2024/09/30 16:48:37 by alejogogi        ###   ########.fr       */
+/*   Updated: 2024/10/21 01:52:02 by alejagom         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>  /*borrar libreria*/
-#include <string.h> /*borrar libreria*/
 
 char	*ft_strrchr(char *str, int c)
 {

@@ -6,14 +6,13 @@
 /*   By: alejagom <alejagom@student.42madird.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 21:57:52 by alejagom          #+#    #+#             */
-/*   Updated: 2024/10/03 17:13:05 by alejagom         ###   ########.fr       */
+/*   Updated: 2024/10/21 01:51:00 by alejagom         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
-int	ft_strlen(char *str)/*cuenta la cantidad de longitud del string*/
+int	ft_strlen(char *str)
 {
 	int	i;
 

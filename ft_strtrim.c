@@ -3,18 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: alejogogi <alejogogi@student.42.fr>        +#+  +:+       +#+        */
+/*   By: alejagom <alejagom@student.42madird.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/10 18:30:17 by alejogogi         #+#    #+#             */
-/*   Updated: 2024/10/13 10:46:51 by alejogogi        ###   ########.fr       */
+/*   Updated: 2024/10/21 01:52:43 by alejagom         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>  //borrar libreria
-#include <stdlib.h> //borrar libreria
-#include <string.h>//borrar librerias
-//revisar codigo y evaluar manera de hacerlo diferente.
+
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	char	*a;

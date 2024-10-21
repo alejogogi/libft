@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: alejogogi <alejogogi@student.42.fr>        +#+  +:+       +#+        */
+/*   By: alejagom <alejagom@student.42madird.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/03 19:13:01 by alejogogi         #+#    #+#             */
-/*   Updated: 2024/10/19 18:55:38 by alejogogi        ###   ########.fr       */
+/*   Updated: 2024/10/21 01:54:24 by alejagom         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,9 @@
 #include <stddef.h>
 #include <unistd.h>
 #include <stdio.h>
-
+#include <string.h>
+#include <stdlib.h>
+#include <ctype.h>
 
 int	ft_isalpha(int c);
 int	ft_isdigit(int c);
