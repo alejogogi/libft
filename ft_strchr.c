@@ -6,7 +6,7 @@
 /*   By: alejogogi <alejogogi@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/30 11:38:14 by alejogogi         #+#    #+#             */
-/*   Updated: 2024/10/23 03:21:00 by alejogogi        ###   ########.fr       */
+/*   Updated: 2024/10/23 05:18:45 by alejogogi        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,10 +20,8 @@ char	*ft_strchr(const char *s, int c)
 			return ((char *)s);
 		s++;
 	}
-	if (c == '\0')
-	{
+	if (*s == (unsigned char)c)
 		return ((char *)s);
-	}
 	return (NULL);
 }
 
