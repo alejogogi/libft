@@ -6,7 +6,7 @@
 /*   By: alejogogi <alejogogi@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 23:13:39 by alejogogi         #+#    #+#             */
-/*   Updated: 2024/10/21 02:18:41 by alejogogi        ###   ########.fr       */
+/*   Updated: 2024/10/23 03:27:37 by alejogogi        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,10 @@
 
 void	ft_putstr_fd(char *s, int fd)
 {
-	int	i;
-
-	i = 0;
 	while (*s)
 	{
 		write(fd, s, 1);
-		i++;
+		s++;
 	}
 }
 
