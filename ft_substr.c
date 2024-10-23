@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: alejagom <alejagom@student.42madird.fr>    +#+  +:+       +#+        */
+/*   By: alejogogi <alejogogi@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 10:36:42 by alejogogi         #+#    #+#             */
-/*   Updated: 2024/10/21 01:52:50 by alejagom         ###   ########.fr       */
+/*   Updated: 2024/10/23 05:36:45 by alejogogi        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,10 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	char	*substr;
 	size_t	i;
 	size_t	j;
+	size_t	str_len;
 
-	if (start >= ft_strlen(s))
+	str_len = ft_strlen(s);
+	if (start >= ft_strlen)
 	{
 		return ((char *)malloc(1));
 	}
@@ -44,11 +46,15 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 /*
 int	main(void)
 {
-	char *cadena_original = "hola mundo";
-	size_t start = 5;
-	size_t len = 6;
-	char *resultado = ft_substr(cadena_original, start, len);
+	char	*cadena_original;
+	size_t	start;
+	size_t	len;
+	char	*resultado;
 
+	cadena_original = "hola mundo";
+	start = 5;
+	len = 6;
+	resultado = ft_substr(cadena_original, start, len);
 	if (resultado != NULL)
 	{
 		printf("subcadena: %s\n", resultado);
