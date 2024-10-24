@@ -6,7 +6,7 @@
 /*   By: alejogogi <alejogogi@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 10:36:42 by alejogogi         #+#    #+#             */
-/*   Updated: 2024/10/24 01:20:25 by alejogogi        ###   ########.fr       */
+/*   Updated: 2024/10/24 13:04:34 by alejogogi        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,12 +22,13 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	str_len = ft_strlen(s);
 	if (start >= str_len)
 	{
-		return ((char *)malloc(1));
+		substr = (char *)malloc(1);
+		if (substr)
+			substr[0] = '\0';
+		return (substr);
 	}
 	if (len > ft_strlen(s) - start)
-	{
 		len = ft_strlen(s) - start;
-	}
 	substr = (char *)malloc((len + 1) * sizeof(char));
 	if (!substr)
 		return (NULL);

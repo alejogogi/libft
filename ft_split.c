@@ -6,7 +6,7 @@
 /*   By: alejogogi <alejogogi@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/13 09:53:46 by alejogogi         #+#    #+#             */
-/*   Updated: 2024/10/21 05:49:33 by alejogogi        ###   ########.fr       */
+/*   Updated: 2024/10/24 13:28:02 by alejogogi        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,7 +53,7 @@ static void	*ft_counter_end(const char *s, char c)
 	return (sup);
 }
 
-static void	*free_memory(char **resultado, int i, size_t *aux_1, size_t *aux_2)
+static void	*ft_free(char **resultado, int i, size_t *aux_1, size_t *aux_2)
 {
 	while (i >= 0)
 	{
@@ -108,12 +108,10 @@ char	**ft_split(const char *s, char c)
 	if (!ptr)
 		return (free(aux_b), free(aux_e), NULL);
 	n = -1;
-	while (++n < ft_count_words(s, c))
-	{
+	while (++n < (size_t)ft_count_words(s, c))
 		*(ptr + n) = ft_substr(s, aux_b[n], (aux_e[n] - aux_b[n] + 1));
-		if (!*(ptr + n))
-			return (ft_free(ptr, n, aux_b, aux_e));
-	}
+	if (!*(ptr + n))
+		return (ft_free(ptr, n, aux_b, aux_e));
 	return (free(aux_b), free(aux_e), ptr);
 }
 
