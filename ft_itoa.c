@@ -3,91 +3,56 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: alejagom <alejagom@student.42madird.fr>    +#+  +:+       +#+        */
+/*   By: alejogogi <alejogogi@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 22:16:13 by alejogogi         #+#    #+#             */
-/*   Updated: 2024/10/21 01:41:11 by alejagom         ###   ########.fr       */
+/*   Updated: 2024/10/24 16:23:02 by alejogogi        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static char	*ft_min(int num)
+static int	ft_intlen(int n)
 {
-	unsigned int	j;
-	char			*ptr;
-	char			rest;
+	int	len;
 
-	j = 10;
-	if (num != -2147483648)
-		return (NULL);
-	ptr = (char *)malloc(12);
-	if (!(ptr))
-		return (0);
-	ptr[11] = '\0';
-	while (num != 0)
+	len = 0;
+	if (n <= 0)
+		len = 1;
+	while (n != 0)
 	{
-		rest = (num % 10) * -1 + '0';
-		ptr[j] = rest;
-		num = num / 10;
-		j--;
+		n /= 10;
+		len++;
 	}
-	ptr[0] = '-';
-	return (ptr);
-}
-
-static unsigned char	ft_is_negative(int *num)
-{
-	if (*num < 0)
-	{
-		*num = *num * (-1);
-		return (1);
-	}
-	return (0);
-}
-
-static unsigned int	ft_uint_len(int num)
-{
-	unsigned int	j;
-
-	j = 1;
-	while (num >= 10)
-	{
-		num = num / 10;
-		j++;
-	}
-	return (j);
+	return (len);
 }
 
 char	*ft_itoa(int n)
 {
-	unsigned char	i;
-	unsigned int	j;
-	char			*ptr;
-	char			rest;
+	char	*str;
+	int		len;
+	long	num;
 
-	ptr = ft_min(n);
-	if (ptr)
-		return (ptr);
-	i = ft_is_negative(&n);
-	j = ft_uint_len(n);
-	ptr = (char *)malloc(i + j + 1);
-	if (!(ptr))
-		return (0);
-	ptr[j + i] = '\0';
-	while (n >= 10)
+	num = n;
+	len = ft_intlen(num);
+	str = (char *)malloc(len + 1);
+	if (!str)
+		return (NULL);
+	str[len] = '\0';
+	if (num < 0)
 	{
-		rest = (n % 10) + '0';
-		ptr[j + i - 1] = rest;
-		n = n / 10;
-		j--;
+		str[0] = '-';
+		num = -num;
 	}
-	ptr[0 + i] = n + '0';
-	if (i)
-		ptr[0] = '-';
-	return (ptr);
+	while (num > 0)
+	{
+		str[--len] = (num % 10) + '0';
+		num /= 10;
+	}
+	if (n == 0)
+		str[0] = '0';
+	return (str);
 }
-
 /*
 int	main(void)
 {
