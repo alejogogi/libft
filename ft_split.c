@@ -6,7 +6,7 @@
 /*   By: alejogogi <alejogogi@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/13 09:53:46 by alejogogi         #+#    #+#             */
-/*   Updated: 2024/10/24 13:28:02 by alejogogi        ###   ########.fr       */
+/*   Updated: 2024/10/24 13:57:12 by alejogogi        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 static int	ft_count_words(const char *str, int fin)
 {
-	unsigned int	cont;
+	size_t			cont;
 	int				i;
 
 	cont = 0;
@@ -55,11 +55,8 @@ static void	*ft_counter_end(const char *s, char c)
 
 static void	*ft_free(char **resultado, int i, size_t *aux_1, size_t *aux_2)
 {
-	while (i >= 0)
-	{
+	while (i--)
 		free(resultado[i]);
-		i--;
-	}
 	free(resultado);
 	free(aux_1);
 	free(aux_2);
