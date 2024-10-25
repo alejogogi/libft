@@ -3,34 +3,33 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: alejagom <alejagom@student.42madird.fr>    +#+  +:+       +#+        */
+/*   By: alejogogi <alejogogi@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 18:38:47 by alejogogi         #+#    #+#             */
-/*   Updated: 2024/10/21 01:33:34 by alejagom         ###   ########.fr       */
+/*   Updated: 2024/10/25 10:26:19 by alejogogi        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>/*borrar libreria*/
 
-char	*ft_strnstr(const char *haystak, const char *needle, size_t n)
+char	*ft_strnstr(const char *big, const char *little, size_t n)
 {
 	size_t	i;
 	size_t	a;
 
-	if (!*needle)
+	if (!*little)
 	{
-		return ((char *)haystak);
+		return ((char *)big);
 	}
 	i = 0;
-	while (i < n && haystak[i])
+	while (i < n && big[i])
 	{
 		a = 0;
-		while (haystak[i + a] == needle[a] && (i + a) < n)
+		while (big[i + a] == little[a] && (i + a) < n)
 		{
-			if (needle[a + 1] == '\0')
+			if (little[a + 1] == '\0')
 			{
-				return ((char *)&haystak[i]);
+				return ((char *)&big[i]);
 			}
 			a++;
 		}
