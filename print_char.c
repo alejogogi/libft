@@ -1,31 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strmapi.c                                       :+:      :+:    :+:   */
+/*   print_char.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alejogogi <alejogogi@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/17 22:38:14 by alejogogi         #+#    #+#             */
-/*   Updated: 2024/10/21 02:53:35 by alejogogi        ###   ########.fr       */
+/*   Created: 2024/10/29 10:36:29 by alejogogi         #+#    #+#             */
+/*   Updated: 2024/10/29 18:32:45 by alejogogi        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "libftprintf.h"
 
-char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
+void	print_char(char c)
 {
-	unsigned int	i;
-	char			*str;
-
-	str = (char *)malloc(ft_strlen(s) + 1);
-	if (!str)
-		return (0);
-	i = 0;
-	while (s[i] != '\0')
-	{
-		str[i] = f(i, s[i]);
-		i++;
-	}
-	str[i] = '\0';
-	return (str);
+	write(1, &c, 1);
+	return(0);
 }

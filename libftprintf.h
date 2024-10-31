@@ -1,38 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   libftprintf.h                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alejogogi <alejogogi@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/25 21:57:52 by alejagom          #+#    #+#             */
-/*   Updated: 2024/10/23 03:51:17 by alejogogi        ###   ########.fr       */
+/*   Created: 2024/10/29 09:47:50 by alejogogi         #+#    #+#             */
+/*   Updated: 2024/10/29 18:29:28 by alejogogi        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#ifndef LIBFTPRINTF_H
+# define LIBFTPRINTF_H
+#include <unistd.h>
+#include <stdio.h>
 
-int	ft_strlen(const char *s)
-{
-	size_t	n;
+int	ft_printf(char const *, ...);
+void	print_char(char c);
+void	print_string(va_list args);
 
-	n = 0;
-	while (*s)
-	{
-		n++;
-		s++;
-	}
-	return (n);
-}
-
-/*
-int	main(void)
-{
-	char	a[20] = "hola ";
-	int		valor;
-
-	valor = ft_strlen(a);
-	printf("longitud de la  string %u\n", valor);
-	return(0);
-}
-*/
+#endif // LIBFTPRINTF_H

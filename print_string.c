@@ -1,42 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*   print_string.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: alejagom <alejagom@student.42madird.fr>    +#+  +:+       +#+        */
+/*   By: alejogogi <alejogogi@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/25 21:55:24 by alejagom          #+#    #+#             */
-/*   Updated: 2024/10/03 16:50:07 by alejagom         ###   ########.fr       */
+/*   Created: 2024/10/29 10:44:09 by alejogogi         #+#    #+#             */
+/*   Updated: 2024/10/29 18:33:01 by alejogogi        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "libftprintf.h"
 
-int	ft_isprint(int c)
+void	print_string(char *str)
 {
-	if (c >= 32 && c <= 126)
+	char	*str;
+
+	str = va_args(args, char *);
+	if(!str)
 	{
-		return (1);
+		str = NULL;
 	}
-	else
+	while(*str)
 	{
-		return (0);
+		write(1, str, 1);
+		str++;
 	}
 }
-
-/*
-int	main(void)
-{
-	char	i ='*';
-
-	if (ft_isprint(i))
-	{
-		printf("1: \n", i);
-	}
-	else
-	{
-		printf("0: \n", i);
-	}
-	return(0);
-}
-*/

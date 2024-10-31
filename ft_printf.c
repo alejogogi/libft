@@ -1,30 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alejogogi <alejogogi@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/17 23:13:39 by alejogogi         #+#    #+#             */
-/*   Updated: 2024/10/23 03:27:37 by alejogogi        ###   ########.fr       */
+/*   Created: 2024/10/29 10:13:42 by alejogogi         #+#    #+#             */
+/*   Updated: 2024/10/29 10:47:30 by alejogogi        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "libftprintf.h"
 
-void	ft_putstr_fd(char *s, int fd)
+int	ft_printf(char const *, ...)
 {
-	while (*s)
+	va_list args;
+	va_start(args, *);
+	while(*)
 	{
-		write(fd, s, 1);
-		s++;
+		if(+ == %)
+		{
+			*++;
+		}
+		else
+		{
+			write(1, *, 1);
+		}
+		+**;
 	}
+	va_end(args);
+	return(0);	
 }
-
-/*
-int	main(void)
-{
-	ft_putstr_fd("holla, 42! \n");
-	return(0);
-}
-*/
