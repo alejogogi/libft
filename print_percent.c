@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   print_integer.c                                    :+:      :+:    :+:   */
+/*   print_percent.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: alejagom <alejagom@student.42madird.fr>    +#+  +:+       +#+        */
+/*   By: alejogogi <alejogogi@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/31 12:36:10 by alejagom          #+#    #+#             */
-/*   Updated: 2024/10/31 12:38:45 by alejagom         ###   ########.fr       */
+/*   Created: 2024/10/31 13:05:49 by alejogogi         #+#    #+#             */
+/*   Updated: 2024/10/31 13:06:16 by alejogogi        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libftprintf.h"
 
-void    print_integer(int num)
+void	print_percent()
 {
-     
+	
 }

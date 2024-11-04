@@ -12,12 +12,19 @@
 
 #include "libftprintf.h"
 
-void	print_pointer(int *ptr)
+void	print_pointer(void *ptr)
 {
-	while(ptr != NULL)
+	unsigned long	address;
+
+	address = (unsigned long)ptr;
+	print_string("0x");
+	if(address == 0)
 	{
-		write(1, &ptr, 1);
-		ptr++;
+		print_char('0');
+	}
+	else
+	{
+		print_hex(address);
 	}
 	return(0);
 }

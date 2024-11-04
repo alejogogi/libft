@@ -1,43 +1,46 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    makefile                                           :+:      :+:    :+:    #
+#    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
 #    By: alejogogi <alejogogi@student.42.fr>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2024/10/29 09:13:00 by alejogogi         #+#    #+#              #
-#    Updated: 2024/10/29 10:47:23 by alejogogi        ###   ########.fr        #
+#    Created: 2024/11/01 17:42:24 by alejogogi         #+#    #+#              #
+#    Updated: 2024/11/04 10:13:56 by alejogogi        ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libftprintf.a
-
 CC = cc
-CFLAGS = -Wall -Wextra -Werror
+CFLAGS = -Wall -Werror -Wextra
 
-SRC =   ft_printf
+SRCS = 	ft_printf.c \
+		print_pointer.c \
+		print_unsigned.c \
+		print_string.c \
+		print_int.c \
+		print_char.c \
+		print_hex.c \
 
-OBJ = $(SRC:.c=.o)
-
-INCLUDE = libft.h
-
-AR = ar rcs
-RM = rm -f
-
-.PHONY: all clean fclean re
+OBJS = $(SRCS:.c=.o)
 
 all: $(NAME)
 
-$(NAME): $(OBJ)
-        $(AR) $(NAME) $(OBJ)
+makelibft:
+	@make -C $(LIBFTDIR)
+	@cp $(LIBFTDIR)/$(LIBFTNAME) .
+	@mv $(LIBFTNAME) $(NAME)
 
-%.o: %.c $(INCLUDE)
-        $(CC) $(CFLAGS) -c -o $@ $<
-        
-clean: 
-        $(RM) $(OBJ)
+$(NAME): makelibft $(OBJS)
+	@ar -r $(NAME) $(OBJS)
 
+clean:
+	@rm -f $(OBJS)
+	@cd $(LIBFTDIR) && make clean
+	
 fclean: clean
-        $(RM) $(NAME)
-
+	@rm -f $(NAME)
+	@cd $(LIBFTDIR) && make fclean
+	
 re: fclean all
+
