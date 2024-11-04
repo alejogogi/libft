@@ -6,7 +6,7 @@
 /*   By: alejogogi <alejogogi@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 09:47:50 by alejogogi         #+#    #+#             */
-/*   Updated: 2024/11/04 10:13:52 by alejogogi        ###   ########.fr       */
+/*   Updated: 2024/11/04 18:32:53 by alejogogi        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 
 int	ft_printf(char const *, ...);
 void	print_char(char c);
-void	print_string(va_list args);
+int print_string(char *s);
 void	print_hex(unsigned long num);
 void    print_int(int n);
 
