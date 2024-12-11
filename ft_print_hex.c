@@ -1,46 +1,45 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   print_int.c                                        :+:      :+:    :+:   */
+/*   ft_print_hex.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alejogogi <alejogogi@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/04 10:16:28 by alejogogi         #+#    #+#             */
-/*   Updated: 2024/11/04 10:28:44 by alejogogi        ###   ########.fr       */
+/*   Created: 2024/10/31 13:04:48 by alejogogi         #+#    #+#             */
+/*   Updated: 2024/11/27 17:05:13 by alejogogi        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "libftprintf.h"
 
-void	print_int(int n)
+void	ft_print_hex(unsigned long num, a)
 {
-	char	buffer[12];
-	int		id;
+	char	hex_digit;
 
-	id = 0;
-	if (n == 0)
-		write(1, "0", 1);
-	return ;
-	if (n < 0)
-		write(1, "-", 1);
-	n = -n;
-	while (n > 0)
+	hex_digit = "0123456789abcdef"[num % 16];
+	if (num >= 16)
 	{
-		buffer[id] = (n % 10) + 48;
-		n = n / 10;
-		id++;
+		ft_print_hex(num / 16)
 	}
-	id--;
-	while (id >= 0)
+	else
 	{
-		write(1, &buffer[id], 1);
-		id--;
+		ft_print_char(hex_digit);
 	}
+	return (0);
 }
 
-int	main(void)
+static 	ft_print_hexmin(unsigned long num)
 {
-	print_int(-52647);
-	write(1, "\n", 1);
+	char	hex_digit;
+
+	hex_digit = "0123456789abcdef"[num % 16];
+	if (num >= 16)
+	{
+		ft_print_hex(num / 16)
+	}
+	else
+	{
+		ft_print_char(hex_digit);
+	}
 	return (0);
 }

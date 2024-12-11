@@ -14,11 +14,11 @@
 
 void	print_pointer(void *ptr)
 {
-	unsigned long	address;
+	unsigned long address;
 
 	address = (unsigned long)ptr;
 	print_string("0x");
-	if(address == 0)
+	if (address == 0)
 	{
 		print_char('0');
 	}
@@ -26,5 +26,5 @@ void	print_pointer(void *ptr)
 	{
 		print_hex(address);
 	}
-	return(0);
+	return (0);
 }

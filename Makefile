@@ -6,41 +6,40 @@
 #    By: alejogogi <alejogogi@student.42.fr>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/01 17:42:24 by alejogogi         #+#    #+#              #
-#    Updated: 2024/11/04 10:13:56 by alejogogi        ###   ########.fr        #
+#    Updated: 2024/11/27 17:48:32 by alejogogi        ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libftprintf.a
+
 CC = cc
-CFLAGS = -Wall -Werror -Wextra
+CFLAGS = -Wall -Wextra -Werror
 
-SRCS = 	ft_printf.c \
-		print_pointer.c \
-		print_unsigned.c \
-		print_string.c \
-		print_int.c \
-		print_char.c \
-		print_hex.c \
+SRC =	ft_print_char.c ft_print_hex\
+		ft_print_number.c ft_print_pointer.c\
+		ft_print_string.c ft_print_unsigned\
 
-OBJS = $(SRCS:.c=.o)
+OBJ = $(SRC:.c=.o)
+
+INCLUDE = ft_printf.h
+
+AR = ar rcs
+RM = rm -f
+
+.PHONY: all clean fclean re
 
 all: $(NAME)
 
-makelibft:
-	@make -C $(LIBFTDIR)
-	@cp $(LIBFTDIR)/$(LIBFTNAME) .
-	@mv $(LIBFTNAME) $(NAME)
-
-$(NAME): makelibft $(OBJS)
-	@ar -r $(NAME) $(OBJS)
-
-clean:
-	@rm -f $(OBJS)
-	@cd $(LIBFTDIR) && make clean
+$(NAME): $(OBJ)
+	$(AR) $(NAME) $(OBJ)
+ 
+%.o: %.c $(INCLUDE)
+	$(CC) $(CFLAGS) -c -o $@ $<
 	
+clean: 
+	$(RM) $(OBJ)
+
 fclean: clean
-	@rm -f $(NAME)
-	@cd $(LIBFTDIR) && make fclean
-	
-re: fclean all
+	$(RM) $(NAME)
 
+re: fclean all

@@ -1,29 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   print_hex.c                                        :+:      :+:    :+:   */
+/*   ft_print_string.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alejogogi <alejogogi@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/31 13:04:48 by alejogogi         #+#    #+#             */
-/*   Updated: 2024/11/01 18:28:43 by alejogogi        ###   ########.fr       */
+/*   Created: 2024/10/29 10:44:09 by alejogogi         #+#    #+#             */
+/*   Updated: 2024/11/27 17:40:09 by alejogogi        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
+#include "libfprintf"
 
-void	print_hex(unsigned long num)
+int	ft_print_string(char *s)
 {
-	char	hex_digit;
+	int	cont;
 
-	hex_digit = "0123456789abcdef"[num % 16];
-	if(num >= 16)
+	cont = 0;
+	if (!s)
 	{
-		print_hex(num / 16)
+		s = "null";
 	}
-	else
+	while (s[cont])
 	{
-		print_char(hex_digit);
+		write(1, &s[cont], 1);
+		cont++;
 	}
-	return(0);
+	return (cont);
 }
+/*
+int	main(void)
+{
+	char *mes = "hello world";
+	int length = print_string(mes);
+	write(1, "\n", 1);
+	return (0);
+}
+*/
