@@ -1,18 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_unsigned.c                                :+:      :+:    :+:   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alejogogi <alejogogi@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/31 13:03:56 by alejogogi         #+#    #+#             */
-/*   Updated: 2024/11/27 17:48:53 by alejogogi        ###   ########.fr       */
+/*   Created: 2024/10/29 10:44:09 by alejogogi         #+#    #+#             */
+/*   Updated: 2025/01/08 17:05:38 by alejogogi        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
+#include "ft_printf.h"
+#include <stdio.h>
 
-void	print_unsigned(unsigned int num)
+int	ft_putstr(char *s)
 {
-	
+	int	c;
+
+	c = 0;
+	if (!s)
+		s = "(null)";
+	while (s[c])
+	{
+		ft_putchar(s[c]);		
+		c++;
+	}
+	return (c);
 }
+
+// int	main()
+// {
+// 	char	*c = NULL;
+// 	int	b;
+	
+// 	b = ft_putstr(c);
+// 	write (1, "\n", 1);
+// 	printf("long: %d\n", b);
+// 	return (0);
+// }

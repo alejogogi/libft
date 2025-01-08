@@ -6,7 +6,7 @@
 #    By: alejogogi <alejogogi@student.42.fr>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/01 17:42:24 by alejogogi         #+#    #+#              #
-#    Updated: 2024/11/27 17:48:32 by alejogogi        ###   ########.fr        #
+#    Updated: 2025/01/06 21:32:26 by alejogogi        ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,9 +15,10 @@ NAME = libftprintf.a
 CC = cc
 CFLAGS = -Wall -Wextra -Werror
 
-SRC =	ft_print_char.c ft_print_hex\
-		ft_print_number.c ft_print_pointer.c\
-		ft_print_string.c ft_print_unsigned\
+SRC =	ft_printf.c ft_putchar.c\
+		ft_puthex.c ft_putnbr.c\
+		ft_putpointer.c ft_putstr.c\
+		ft_putunbr.c\
 
 OBJ = $(SRC:.c=.o)
 

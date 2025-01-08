@@ -1,30 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf.h                                        :+:      :+:    :+:   */
+/*   ft_puthex.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alejogogi <alejogogi@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/29 09:47:50 by alejogogi         #+#    #+#             */
-/*   Updated: 2025/01/08 16:45:45 by alejogogi        ###   ########.fr       */
+/*   Created: 2024/10/31 13:04:48 by alejogogi         #+#    #+#             */
+/*   Updated: 2025/01/08 17:11:02 by alejogogi        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_PRINTF_H
-# define FT_PRINTF_H
+#include "ft_printf.h"
 
-# include <stdarg.h>
-# include <stdio.h>
-# include <stdlib.h>
-# include <unistd.h>
+int	ft_puthex(int num, char c)
+{
+	char	*hex;
+	int		ln;
 
-int		ft_printf(const char *str, ...);
-int		ft_putchar(int c);
-int		ft_putstr(char *s);
-int		ft_puthex(int num, char c);
-int		ft_putunbr(int num);
-int		ft_putpointer(void *ptr);
-int		ft_putnbr(int num);
-char	*ft_strchr(const char *s, int c);
-
-#endif
+	ln = 0;
+	if (c == 'X')
+	{
+		hex = "0123456789ABCDEF";
+	}
+	else if (c == 'x')
+	{
+		hex = "0123456789abcdef";
+	}
+	else
+		return (0);
+	if (num >= 16)
+	{
+		ln = ln + ft_puthex(num / 16, c);
+	}
+	ln += ft_putchar(hex[num % 16]);
+	return (ln);
+}

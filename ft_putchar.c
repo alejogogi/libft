@@ -1,30 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf.h                                        :+:      :+:    :+:   */
+/*   ft_putchar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alejogogi <alejogogi@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/29 09:47:50 by alejogogi         #+#    #+#             */
-/*   Updated: 2025/01/08 16:45:45 by alejogogi        ###   ########.fr       */
+/*   Created: 2024/10/29 10:36:29 by alejogogi         #+#    #+#             */
+/*   Updated: 2025/01/08 16:20:28 by alejogogi        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_PRINTF_H
-# define FT_PRINTF_H
+#include "ft_printf.h"
 
-# include <stdarg.h>
-# include <stdio.h>
-# include <stdlib.h>
-# include <unistd.h>
-
-int		ft_printf(const char *str, ...);
-int		ft_putchar(int c);
-int		ft_putstr(char *s);
-int		ft_puthex(int num, char c);
-int		ft_putunbr(int num);
-int		ft_putpointer(void *ptr);
-int		ft_putnbr(int num);
-char	*ft_strchr(const char *s, int c);
-
-#endif
+int	ft_putchar(int c)
+{
+	return (write(1, &c, 1));
+}

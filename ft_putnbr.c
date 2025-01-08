@@ -1,45 +1,44 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_hex.c                                     :+:      :+:    :+:   */
+/*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alejogogi <alejogogi@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/31 13:04:48 by alejogogi         #+#    #+#             */
-/*   Updated: 2024/11/27 17:05:13 by alejogogi        ###   ########.fr       */
+/*   Created: 2024/11/26 18:34:28 by alejogogi         #+#    #+#             */
+/*   Updated: 2025/01/08 17:13:04 by alejogogi        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
+#include "ft_printf.h"
 
-void	ft_print_hex(unsigned long num, a)
+int	ft_putnbr(int num)
 {
-	char	hex_digit;
+	long	n;
+	int		ln;
 
-	hex_digit = "0123456789abcdef"[num % 16];
-	if (num >= 16)
+	n = num;
+	ln = 0;
+	if (num < 0)
 	{
-		ft_print_hex(num / 16)
+		ln += ft_putchar('-');
+		n = -n;
 	}
-	else
+	if (n >= 10)
 	{
-		ft_print_char(hex_digit);
+		ln = ln + ft_putnbr(n / 10);
 	}
-	return (0);
+	ft_putchar((n % 10) + 48);
+	return (ln);
 }
 
-static 	ft_print_hexmin(unsigned long num)
+/*
+main ()
 {
-	char	hex_digit;
+	int	c;
 
-	hex_digit = "0123456789abcdef"[num % 16];
-	if (num >= 16)
-	{
-		ft_print_hex(num / 16)
-	}
-	else
-	{
-		ft_print_char(hex_digit);
-	}
+	c = "123";
+	ft_printf("caracter %i" c);
 	return (0);
 }
+*/
