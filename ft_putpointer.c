@@ -6,7 +6,7 @@
 /*   By: alejogogi <alejogogi@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/06 19:04:13 by alejogogi         #+#    #+#             */
-/*   Updated: 2025/01/08 17:18:03 by alejogogi        ###   ########.fr       */
+/*   Updated: 2025/01/08 21:34:13 by alejogogi        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,16 @@
 
 int	ft_putpointer(void *ptr)
 {
-	int				ln;
+	unsigned long long	a;
+	int					ln;
 
 	ln = 0;
+	a = (unsigned long long)ptr;
 	if (!ptr)
 	{
-		ft_putstr("(nil)");
+		return (ft_putstr("(nil)"));
 	}
 	ln += ft_putstr("0x");
-	ln += ft_puthex((unsigned long)ptr, 'x');
+	ln += ft_puthex(a, 'x');
 	return (ln);
 }

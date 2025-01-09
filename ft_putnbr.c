@@ -6,7 +6,7 @@
 /*   By: alejogogi <alejogogi@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/26 18:34:28 by alejogogi         #+#    #+#             */
-/*   Updated: 2025/01/08 17:13:04 by alejogogi        ###   ########.fr       */
+/*   Updated: 2025/01/08 19:40:46 by alejogogi        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ int	ft_putnbr(int num)
 	{
 		ln = ln + ft_putnbr(n / 10);
 	}
-	ft_putchar((n % 10) + 48);
+	ln += ft_putchar((n % 10) + 48);
 	return (ln);
 }
 

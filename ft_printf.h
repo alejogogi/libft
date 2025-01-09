@@ -6,7 +6,7 @@
 /*   By: alejogogi <alejogogi@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 09:47:50 by alejogogi         #+#    #+#             */
-/*   Updated: 2025/01/08 16:45:45 by alejogogi        ###   ########.fr       */
+/*   Updated: 2025/01/08 20:23:12 by alejogogi        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,8 @@
 int		ft_printf(const char *str, ...);
 int		ft_putchar(int c);
 int		ft_putstr(char *s);
-int		ft_puthex(int num, char c);
-int		ft_putunbr(int num);
+int		ft_puthex(unsigned long long num, char c);
+int		ft_putunbr(unsigned int num);
 int		ft_putpointer(void *ptr);
 int		ft_putnbr(int num);
 char	*ft_strchr(const char *s, int c);

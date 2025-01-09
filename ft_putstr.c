@@ -22,17 +22,17 @@ int	ft_putstr(char *s)
 		s = "(null)";
 	while (s[c])
 	{
-		ft_putchar(s[c]);		
+		ft_putchar(s[c]);
 		c++;
 	}
 	return (c);
 }
 
-// int	main()
+// int	main(void)
 // {
 // 	char	*c = NULL;
 // 	int	b;
-	
+
 // 	b = ft_putstr(c);
 // 	write (1, "\n", 1);
 // 	printf("long: %d\n", b);

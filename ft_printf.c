@@ -6,7 +6,7 @@
 /*   By: alejogogi <alejogogi@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 10:13:42 by alejogogi         #+#    #+#             */
-/*   Updated: 2025/01/08 16:44:45 by alejogogi        ###   ########.fr       */
+/*   Updated: 2025/01/08 20:26:52 by alejogogi        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ int	ft_cases(va_list args, char c)
 	else if (c == 'u')
 		b += ft_putunbr(va_arg(args, unsigned int));
 	else if (c == 'x' || c == 'X')
-		b += ft_puthex(va_arg(args, int), c);
+		b += ft_puthex(va_arg(args, unsigned int), c);
 	else if (c == '%')
 		b += ft_putchar('%');
 	return (b);
