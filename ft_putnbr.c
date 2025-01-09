@@ -6,7 +6,7 @@
 /*   By: alejogogi <alejogogi@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/26 18:34:28 by alejogogi         #+#    #+#             */
-/*   Updated: 2025/01/08 19:40:46 by alejogogi        ###   ########.fr       */
+/*   Updated: 2025/01/09 21:16:52 by alejogogi        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ int	ft_putnbr(int num)
 	if (num < 0)
 	{
 		ln += ft_putchar('-');
-		n = -n;
+		n = n * -1;
 	}
 	if (n >= 10)
 	{
@@ -32,13 +32,12 @@ int	ft_putnbr(int num)
 	return (ln);
 }
 
-/*
-main ()
+/*int	main (void)
 {
-	int	c;
-
-	c = "123";
-	ft_printf("caracter %i" c);
+	int c = -123;
+	
+	ft_printf("caracter %i", c);
+	//printf("numero correcto %d \n", c);
 	return (0);
 }
 */
