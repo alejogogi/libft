@@ -6,7 +6,7 @@
 /*   By: alejogogi <alejogogi@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 10:13:42 by alejogogi         #+#    #+#             */
-/*   Updated: 2025/01/09 20:01:42 by alejogogi        ###   ########.fr       */
+/*   Updated: 2025/01/10 21:34:29 by alejogogi        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,3 +57,32 @@ int	ft_printf(const char *str, ...)
 	va_end(args);
 	return (ln);
 }
+
+/*
+int main()
+{
+	char	*c;
+	int	s;
+	int	a;
+	char	b;
+	int	f;
+	char	p;
+	int	k;
+	int	ln;
+
+	c = "hola";
+	s = 22;
+	b = 'a';
+	f = 456251;
+	p = 'a';
+	k = -45236;
+	ln = 0; 
+	
+	ln += ft_printf("esto imprime %s\n num %d char %%\n", c, s);
+	ln += ft_printf("base hexadecimal %x\n", f);
+	ln += ft_printf("puntero %p\n", p);
+	ln += ft_printf("negativo %i\n", k);
+	ft_printf("longitud %d", ln);	
+	return(0);	
+}
+*/
